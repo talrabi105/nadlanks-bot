@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "swift-temple-337507",
+  "private_key_id": "c176a7c8cd70559bdf887409ce4361f147e75cc4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDqAZA8wdPEjPmC\njDl/1btJQmaEryJ12bm51YzkbbMvO2N5/IiCiiZKy4rFQQy8oQikCokjxiJg1elY\nhdgFnljviHfi4rwHUuTCNy1nnh9vN9IbBDX3uGjWx80Sg/sr97AYeluLyhPP9jxl\nNoSMoapeGXZ7BtV33gY7pVXSRg79j0OeiAG5SDovb76aUpDa3jYEVvm340tAuytg\nrhhukY3USn2Xi8b5Aagt9rbF3duiUGwBu1pwqZIwBS3AmLJpKaoOTfIaRvYAtOPb\nUQkVvziHVCHcB5qR4BLVH4RsoEV+9oYF/9Js1qU6X8kDT0RQb/Vs1xOBS1hBb9Vx\neGZ0aDHnAgMBAAECggEACbLhv0Lqe8Ion4zWlmapHEB+SiIgIYQI8cBGsc2dmHoh\nYRQZkOiqo+r46AXFVIQd2GxtFGh/5NeUSufV0Iyoc5CKbl5drmyZZza/Y04L4lh6\ny/xusVV0xTkDVgxEDRNSupD+kKPPyUOl/b9bSMV03V64O0ZI80oLEc5fn/Kf+rd5\n8mVRgwarUHO0xilAU/L2ozx8Jc+uRxSaHfcOX+x6kjY07fecXrsiiT6i31HkVGos\nbk4V1eq/h9+IQkWYJOsUISTL0QdBEf0IkT5BcQ+VtGCqVgOgH5UrB3e3Bk72GQf/\ni77oRwlJrOfdQJeEfDpDeKb0zkAd5TGI09gjoCxKUQKBgQD7gVjOVhQVKMVhP4pz\nBjkO9KXzOZPCoig8vsT6PRuGE25hEdzV243dsBMyfAZp3QSFsSEqh95NHV6KZTlh\nLfhCn82ugbYI8iF2FxVjD0PSsadgVFu8tesv95xoS6dR5rkhY1rnosSxgjNCVu3S\nxxhYS+SNBNYdKpPi09Ml1Iid9QKBgQDuMCggo/KEYOJdt5k3bu0FTWJmtFftOs4q\n5Yy5eQIBvL9TdwLDK+DV9DuBP/Dlo0sertOw6z5GhbFeqAWcA7b5OSaxgPUdMacW\nXFKpL7gS+3I6o8mOA0+FO3IuD3GoAoODCKFAuGtyJyG9e1OwkihiZO0OaQl65EoG\nhRqt8qEq6wKBgA5/nGD4sVuu6AH9KbwLxcpI7DAjR5NWyb8GuFA8qZOHFzvdTb++\nUmVPOywT3kLIDPSwC1tqTbRgVwzfXPlvLvqYP8EplRba7nbiScdWH/DLcPyqoEc2\nrYIsYgXZJqIgDNgR5DGqPnCFMvNGE5utAohEh75hYv53b+MJlwh9QgrpAoGAbOet\n4Ua04xwdRDZnIrZgPxVj0YvRzBEgJPLyBfezGDJB1JrMs4pDcfAKqQ0gSw7/kNbk\nyba1sa79K0dt0SjNp2QfMffBmwiR2iJ6VQsRgfRgBTnQNVOEL2m/yhmboPMNSINQ\nn3PzBK2puqZB3LDnMB3vWbBi+kKZKiP/z9rpH+MCgYEA3ea4KC3hf82zKub1uJz+\npQRhR+kYMnGO35N1LY/xNRSX3BVJ+9zsqeAIHxw2P2mLrbKnaQ5yRRwC/fgFjpEx\n8YV3Ki6VpaMVGWNU40M6b7ykRkPpICIH72/LfIDx0zpaM13O4UI3Cd7dMuszmHG/\nL7/lr+7HCqbRXZ6zd8ufV94=\n-----END PRIVATE KEY-----\n",
+  "client_email": "nadlanks@swift-temple-337507.iam.gserviceaccount.com",
+  "client_id": "112100449320250400590",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/nadlanks%40swift-temple-337507.iam.gserviceaccount.com"
+}
