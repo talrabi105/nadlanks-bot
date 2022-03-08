@@ -1,3 +1,3 @@
-import win32api
+from selenium import webdriver
 
-print(win32api.MessageBox(2,"hi"))
+driver = webdriver.Chrome("./chromedriver.exe")

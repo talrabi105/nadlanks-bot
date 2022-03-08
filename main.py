@@ -31,7 +31,7 @@ def start_window(last_driver=None):
     options = webdriver.ChromeOptions()
     options.add_argument('--user-data-dir=' + CONSTANTS['DEFAULTPATHFORCHROME'])
     options.add_argument('--profile-dictionary=Default')
-    driver = webdriver.Chrome("./chromedriver", options=options)
+    driver = webdriver.Chrome("./chromedriver.exe", options=options)
     driver.maximize_window()
     wa = Whatsapp(driver)
     m = Messenger(driver)
