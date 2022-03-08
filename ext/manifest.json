@@ -1,0 +1,13 @@
+{
+    "name": "google sheets extenstion",
+    "description": "google sheets extenstion",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts":[
+        {
+            "matches":["http://*/*", "https://*/*"],
+            "js": ["index.js"],
+            "run_at": "document_end"
+        }
+    ]
+  }
