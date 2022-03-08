@@ -43,6 +43,10 @@ def mainloop():
     print(CONSTANTS)
     gs = GoogleSheets()
     driver, wa, m = start_window()
+    m_counter=0
+    wa_counter=0
+    start_msg(gs.get_names_list(), gs.get_msg(), gs.get_current_place())
+
     while True:
         gc = gs.check()
         # print("the status is",gc)
@@ -58,7 +62,6 @@ def mainloop():
                 driver, wa, m = start_window(last_driver=driver)
             finally:
                 gs.read()
-                start_msg(gs.get_names_list(), gs.get_msg(), gs.get_current_place())
                 if os.environ['nadlanks-bot'] == '1':
                     print('start send')
                     msg = gs.get_msg()
@@ -66,11 +69,18 @@ def mainloop():
                     try:
                         driver.maximize_window()
                         print(wa_statuses)
-                        wa_statuses = wa.send(gs.get_wa_list(), msg)
+                        wa_list=gs.get_wa_list()
+                        if len(wa_list) < wa_counter:
+                            wa_list = [wa_list[wa_counter]]
+
+                        wa_statuses = wa.send(wa_list(), msg)
                         for i in wa_statuses:
                             gs.upload_status(i[0], i[1])
                             print("upload Whatsapp", i)
-                        m_statuses = m.send(gs.get_m_list(), msg)
+                        m_list=gs.get_m_list()
+                        if len(m_list) < m_counter:
+                            m_list = [m_list[m_counter]]
+                        m_statuses = m.send(m_list, msg)
                         for i in m_statuses:
                             gs.upload_status(i[0], i[1])
                             print("upload Messenger", i)
@@ -90,6 +100,8 @@ def mainloop():
                 else:
                     for i in gs.get_wa_list()+gs.get_m_list():
                         gs.upload_status(i[1], 0)
+                wa_counter=wa_counter+1
+                m_counter=m_counter+1
                 gs.end()
 
 
