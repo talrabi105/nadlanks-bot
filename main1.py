@@ -4,7 +4,6 @@ import win32api
 from selenium.common.exceptions import *
 from selenium import webdriver
 
-from main import start_window, get_constants
 from whatsapp import Whatsapp
 from googleSheets import GoogleSheets
 from messenger import Messenger
@@ -15,6 +14,34 @@ from flask import Flask
 CONSTANTS = get_constants()
 from flask_cors import CORS
 
+
+def a():
+    driver = webdriver.Chrome('./chromedriver')
+    return driver
+
+
+
+def get_constants():
+    with open('constants.txt', 'r') as f:
+        data = f.read()
+    return {con[:con.find(':')]: con[con.find(':') + 1:] for con in data.split('\n')}
+
+
+CONSTANTS = get_constants()
+
+
+def start_window(last_driver=None):
+    if last_driver:
+        last_driver.quit()
+    options = webdriver.ChromeOptions()
+    options.add_argument('--user-data-dir=' + CONSTANTS['DEFAULTPATHFORCHROME'])
+    options.add_argument('--profile-dictionary=Default')
+    driver = webdriver.Chrome("./chromedriver", options=options)
+    driver.maximize_window()
+    wa = Whatsapp(driver)
+    m = Messenger(driver)
+    driver.minimize_window()
+    return driver, wa, m
 
 app = Flask(__name__)
 CORS(app)
