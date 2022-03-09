@@ -1,1 +1,1 @@
-DEFAULTPATHFORCHROME:C:/Users/Sheli/AppData/Local/Google/Chrome/User Data/Default
+DEFAULTPATHFORCHROME:C:/Users/urilu/AppData/Local/Google/Chrome/User Data/Default
