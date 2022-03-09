@@ -9,8 +9,8 @@ class GoogleSheets:
         self.table = []
         self.wa_list = []
         self.m_list = []
-        service = gspread.service_account(filename=os.getcwd() + r"\file1.json")
-        file = service.open("הלקוחות שלי")
+        service = gspread.service_account(filename=os.getcwd() + r"\file1_uri.json")
+        file = service.open("עותק של הלקוחות שלי")
         self.sheet = file.worksheet("sheetForPython")
 
     def check(self):
